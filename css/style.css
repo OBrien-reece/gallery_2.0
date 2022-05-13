@@ -1,0 +1,10 @@
+/********Home page Pagination*************/
+ * 
+ .pager .active a {
+ 	background-color: black;
+ 	color: #fff;
+ }
+
+ .pager .active a:hover {
+ 	background-color: blue;
+ }
