@@ -69,6 +69,7 @@ if(empty($_GET['id'])) {
                     <div class="col-lg-12">
                         <h1 class="page-header">
                              Edit User
+                             <span><small>Click image to select alternative</small></span>
                         </h1>
 
                     <div class="col-md-6 user_image_box">
@@ -78,6 +79,8 @@ if(empty($_GET['id'])) {
                         </a>
 
                     </div>    
+
+                    <!-- Modal for selecting alternative image in folder = (admin/includes/edit_user_photo_modal) -->
 
 
                     <?php include("includes/edit_user_photo_modal.php"); ?>

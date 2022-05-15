@@ -15,6 +15,18 @@ class Session {
 		$this->check_message();
 	}
 
+	public function visitor_count() {
+
+		if(isset($_SESSION['count'])) {
+
+			return $this->count = $_SESSION['count']++;
+
+		}else {
+
+			return $_SESSION['count'] = 1;
+		}
+	}	
+
 	public function message($msg="") {
 
 		if(!empty($msg)) {
@@ -52,18 +64,6 @@ class Session {
 
 			$this->user_id = $_SESSION['user_id'] = $user->id;
 			$this->signed_in = true;
-		}
-	}
-
-	public function visitor_count() {
-
-		if(isset($_SESSION['count'])) {
-
-			return $this->count = $_SESSION['count']++;
-
-		}else {
-
-			return $_SESSION['count'] = 1;
 		}
 	}
 
